@@ -1,1 +1,3 @@
 # onymos-assesment
+
+The code uses a fixed list to represent 1,024 tickers and stores orders for each ticker in a list. The add_order function adds new BUY or SELL orders and the match_order function iterates through orders for a given ticker and matches BUY orders with the best available SELL orders (i.e. those with a sell price that is less than or equal to the buy price and with the lowest price among them). The simulation part of the code generates random orders in a separate thread to mimic real-time trading activity. You can modify or add a test function to insert fixed orders and verify the expected output.
